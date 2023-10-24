@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+body {
+  background-color: rgb(209, 245, 234);
+  color: rgb(249, 249, 243);
+  font-family: "poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(13, 13, 13);
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+nav center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.hero-text {
+  font-size: 1.8rem;
+  font-family: "Nunito", sans-serif;
+  color: black;
+}
+.info {
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 23px 0;
+  align-items: center;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-size: 1.5rem;
+}
+.button {
+  border: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  justify-content: center;
+  background-color: rgb(15, 15, 14);
+  border-radius: 2.5rem;
+  margin-left: 65rem;
+}
+

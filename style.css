@@ -1,0 +1,84 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: rgb(209, 245, 234);
+    color: rgb(249, 249, 243);
+    font-family: "poppins",sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(13, 13, 13);
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+nav center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.quiz {
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+  .quizapp {
+    font-family: "Poppins", sans-serif;
+    padding-top: 120px;
+  }
+  .quizapp h1 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: black;
+  }
+  .quizapp form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+  .quizapp form div input {
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+    width: 20vw;
+  }
+  #emailHelp {
+    font-size: 8px;
+    color: darkolivegreen;
+    margin: 0 5px;
+  }
+#quiz-check {
+    flex-direction: row;
+}
+#quiz-check-input {
+    width: 10px;
+    margin-bottom: 2rem;
+}
+.quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+  .button {
+    border: none;
+    color: rgb(255, 252, 252);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 20px;
+    cursor: pointer;
+    justify-content: center;
+    background-color: rgb(15, 15, 14);
+    border-radius: 2.5rem;
+    margin-left: 65rem;
+  }
+}

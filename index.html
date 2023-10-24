@@ -1,9 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   
-</head>
-<body>
-    Quiz App
-</body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz-app</title>
+  </head>
+  <body>
+    <header>
+      <div id="navi">
+        <nav>
+          <div class="center">Quiz App</div>
+        </nav>
+      </div>
+    </header>
+    <div class="main">
+      <div class="quizapp">
+        <h1>Please enter your details</h1>
+        <div class="quiz">
+          <form>
+            <div class="quiz-app">
+              <label for="Userdetails">Name</label>
+              <input
+                type="name"
+                class="form-control"
+                id="username"
+                aria-describedby="emailHelp"
+                placeholder=""
+              />
+            </div>
+            <div class="quiz-app">
+              <label for="userdetail">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="Emailaddress"
+                aria-describedby="emailHelp"
+                placeholder=""
+              />
+            </div>
+            <div class="quizapp">
+              <label for="userdetail">University Roll No</label>
+              <input
+                type="Phone-no"
+                class="form-control"
+                id="uni"
+                placeholder=""
+              />
+            </div>
+            <button type="submit" onclick="test()" class="btn btn-primary"><a href="./instruction.html">submit</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
