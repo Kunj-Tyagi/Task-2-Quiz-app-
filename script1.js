@@ -40,18 +40,37 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-const timer = document.getElementById("timer");
+let time_element = document.getElementById("timer");
+const skipbutt = document.getElementById("skipbutton");
 
 let currentQuestionIndex = 0;
 let score = 0; 
+let time;
+const totaltime = 15;
+let sec = totaltime;
 
 function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
+    skipbutt.innerHTML = "skip";
     showQuestion();
 }
+function timer(){
+    time_element.innerHTML = sec;
+    sec--;
+    if(sec==0){
+        sec = totaltime;
+        clearInterval(time);
+        currentQuestionIndex++
+        showQuestion();
+        }
+}
 function showQuestion(){
+    sec = totaltime;
+    clearInterval(time);
+    timer();
+    time = setInterval(timer,1000);
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex  + 1;
@@ -101,6 +120,7 @@ function showScore(){
    questionElement.innerHTML =`You scored ${score} out of ${5*questions.length}!`;
    nextButton.innerHTML = "Play Again";
    nextButton.style.display = "block";
+   skipbutt.style.display="none";
 }
 
 function handleNextButton(){
@@ -121,6 +141,18 @@ nextButton.addEventListener("click", ()=>{
         startQuiz();
     }
 });
+
+
+skipbutt.addEventListener("click", ()=>{
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+    }
+    else{
+        startQuiz();
+    }
+});
+
+
 
 startQuiz();
 

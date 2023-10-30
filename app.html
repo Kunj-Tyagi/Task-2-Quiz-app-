@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="app.css"/>
 </head>
 <body>
     <div class="app">
-        <h1>Simple Quiz</h1>
+        <div class="head" style="display: flex;">
+                    <div><h1>Simple Quiz</h1></div>
+                    <div class="time" id="timer" style="font-size: 40px; text-align: center;"></div></div>
+
         <div class="quiz">
             <h2 id="question">Question goes here</h2>
             <div id="answer-buttons">
@@ -15,7 +19,9 @@
                 <button class="btn">Answer 4</button>
             </div>
             <button id="next-btn">Next</button>
+            <button id="skipbutton" class="ski">Skip</button>
         </div>
+
     </div>
     <script src="script1.js"></script>
 </body>

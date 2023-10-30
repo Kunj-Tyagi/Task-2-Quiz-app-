@@ -66,4 +66,49 @@ body {
 .incorrect {
   background: #ff9393;
 }
+.time {
+  background-color: turquoise;
+  color: #000000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 24rem;
+}
+.ski{
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 120px;
+  border: 0;
+  padding: 10px;
+  margin: 80px auto 0;
+  border-radius: 4px;
+ 
+
+}
+
+
+@media screen and (max-width:1107px) {
+
+
+  .app {
+    background: #fff;
+    width: 90%;
+    max-width: 325px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .quiz{
+    font-size: large;
+  }
+ 
+
+  
+}
+@media screen and (max-width:1113px){
+  .time{
+    margin-left: 7rem;
+  }
+}
 

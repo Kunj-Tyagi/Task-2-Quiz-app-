@@ -80,5 +80,41 @@ nav center{
     background-color: rgb(15, 15, 14);
     border-radius: 2.5rem;
     margin-left: 65rem;
+   
+  }
+  width: 120px;
+  height: 40px;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: rgb(156, 255, 134);
+}
+
+
+
+
+@media screen and (max-width:904px){
+  .quizapp form div input {
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+    width: 30vw;
+  }
+  .quizapp form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 15px;
+  }
+  .quizapp h1 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+  }
+  .btn{
+    width: 100px;
+
   }
 }
